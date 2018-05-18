@@ -13,8 +13,10 @@ Route::group([
 
     $router->get('/', 'HomeController@index');
 
+    //$router->resource('users',UserController::class);
     $router->resource('reader',ReaderController::class);
     $router->resource('tags',TagController::class);
+    $router->resource('tasks',TaskController::class);
 
 
 });

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateChartRadiosTable extends Migration
+class CreateAdminRolesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateChartRadiosTable extends Migration
      */
     public function up()
     {
-        Schema::create('chartRadios', function (Blueprint $table) {
+        Schema::create('admin_roles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('label');
-            $table->smallInteger('value');
+            $table->string('name', 50)->unique();
+            $table->integer('permission');//权限
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateChartRadiosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('chartRadios');
+        Schema::dropIfExists('admin_roles');
     }
 }

@@ -45,7 +45,7 @@ return [
     'input'             => 'Input',
     'succeeded'         => 'Succeeded',
     'failed'            => 'Failed',
-    'delete_confirm'    => 'Are you sure to delete this item ?',
+    'delete_confirm'    => '注意：确认是否删除？',
     'delete_succeeded'  => 'Delete succeeded !',
     'delete_failed'     => 'Delete failed !',
     'update_succeeded'  => 'Update succeeded !',
@@ -84,8 +84,8 @@ return [
     'role'       => 'Role',
     'permission' => 'Permission',
     'route'      => 'Route',
-    'confirm'    => 'Confirm',
-    'cancel'     => 'Cancel',
+    'confirm'    => '确认',
+    'cancel'     => '取消',
 
     'http' => [
         'method' => 'HTTP method',

@@ -168,6 +168,7 @@ return [
          * Package Service Providers...
          */
         App\Providers\SwooleServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
         /*
          * Application Service Providers...
          */

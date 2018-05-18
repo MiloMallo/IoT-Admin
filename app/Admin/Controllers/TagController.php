@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Tag;
 
+use Encore\Admin\Auth\Database\Administrator;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Facades\Admin;
@@ -72,12 +73,17 @@ class TagController extends Controller
     protected function grid()
     {
         return Admin::grid(Tag::class, function (Grid $grid) {
-
             $grid->id('ID')->sortable();
             $grid->tagName('标签名');
             $grid->type('类型');
             $grid->created_at();
             $grid->updated_at();
+
+
+            $grid->filter(function ($filter) {
+                $filter->equal('tagName', '标签名')->select(Administrator::all()->pluck('name', 'id'));
+                $filter->equal('type', 'User');
+            });
         });
     }
 
