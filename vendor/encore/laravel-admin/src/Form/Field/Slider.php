@@ -14,12 +14,22 @@ class Slider extends Field
     protected static $js = [
         '/vendor/laravel-admin/AdminLTE/plugins/ionslider/ion.rangeSlider.min.js',
     ];
+    protected $options;
+    public function __construct($column, $arguments = [])
+    {
+        $this->column = $column;
+        $this->label = $this->formatLabel($arguments);
+        $this->id = $this->formatId($column);
 
-    protected $options = [
-        'type'     => 'single',
-        'prettify' => false,
-        'hasGrid'  => true,
-    ];
+        $this->options = [
+            'type'     => 'single',
+            'prettify' => false,
+            'hasGrid'  => true,
+            'min'   => (int)$arguments[0],
+            'from'  => (int)$arguments[1],
+            'max'  => (int)$arguments[2]
+        ];
+    }
 
     public function render()
     {

@@ -23,7 +23,7 @@ use Illuminate\Contracts\Support\Renderable;
  * @method Field\Color          color($name, $label = '')
  * @method Field\Email          email($name, $label = '')
  * @method Field\Mobile         mobile($name, $label = '')
- * @method Field\Slider         slider($name, $label = '')
+ * @method Field\Slider         slider($name,$min,$default,$max, $label = '')
  * @method Field\Map            map($latitude, $longitude, $label = '')
  * @method Field\Editor         editor($name, $label = '')
  * @method Field\File           file($name, $label = '')

@@ -70,10 +70,10 @@ class UserController extends Controller
             $grid->id('ID')->sortable();
             $grid->abbreviation('简称');
             $grid->username('用户名');
-            $grid->mobile('电话');
+            $grid->email('邮箱');
             $grid->phone('手机号码');
             $grid->address('地址');
-            $grid->roles(trans('admin.roles'))->pluck('name')->label();
+            $grid->roles('角色')->pluck('name')->label();
             $grid->created_at(trans('admin.created_at'));
             $grid->updated_at(trans('admin.updated_at'));
             $grid->actions(function (Grid\Displayers\Actions $actions) {
@@ -88,6 +88,10 @@ class UserController extends Controller
                 });
             });
 
+            $grid->filter(function (Grid\Filter $filter) {
+                $filter->equal('roles.role_id', '职务')
+                    ->select(Role::all()->pluck('name', 'id'));
+            });
         });
     }
 
@@ -105,7 +109,7 @@ class UserController extends Controller
             $form->text('username', '用户姓名')->rules('required');
             $form->mobile('phone','手机号码')->rules('required');
             $form->mobile('mobile','电话')->rules('required');
-            $form->image('avatar', '图像');
+            $form->image('avatar', '图像')->rules('required');
             $form->password('password', '密码')->rules('required|confirmed');
             $form->password('password_confirmation', '确认密码')->rules('required')
                 ->default(function ($form) {
