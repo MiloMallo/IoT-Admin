@@ -48,7 +48,7 @@ class HomeController extends Controller
 
             });
             $content->row(function (Row $row) {
-                $row->column(13, new ChartDonut('New Orders', 'shopping-cart', 'green', '/demo/orders', '150%'));
+                $row->column(12, new ChartDonut('New Orders', 'shopping-cart', 'green', '/demo/orders', '150%'));
             });
         });
     }
