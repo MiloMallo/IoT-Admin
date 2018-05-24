@@ -11,26 +11,32 @@
             </div>
         </div>
         <!-- sidebar menu: : style can be found in sidebar.less -->
-        <ul class="sidebar-menu" data-widget="tree">
+        <ul class="sidebar-menu">
             <li class="header">主控导航</li>
-            <li class="active treeview">
+            <li class="active">
                 <a href="{{ admin_base_path('/') }}">
                     <i class="fa fa-dashboard"></i> <span>数据图表</span>
                 </a>
             </li>
-            <li class="treeview">
+            <li>
                 <a href="{{ admin_base_path('auth/users') }}">
                     <i class="fa fa-pie-chart"></i>
                     <span>用户管理</span>
                 </a>
             </li>
-            <li class="treeview">
-                <a href="{{ admin_base_path('/readers') }}">
+            <li>
+                <a href="{{ admin_base_path('/warehouses') }}">
                     <i class="fa fa-pie-chart"></i>
-                    <span>仓库操作</span>
+                    <span>仓库管理</span>
                 </a>
             </li>
-            <li class="treeview">
+            <li>
+                <a href="{{ admin_base_path('/products') }}">
+                    <i class="fa fa-pie-chart"></i>
+                    <span>产品管理</span>
+                </a>
+            </li>
+            <li>
                 <a href="{{ admin_base_path('/tags') }}">
                     <i class="fa fa-pie-chart"></i>
                     <span>标签操作</span>
@@ -42,13 +48,13 @@
                     <small class="label pull-right bg-green">new</small>
                 </a>
             </li>
-            <li class="treeview">
+            <li>
                 <a href="{{ admin_base_path('/auth/logs') }}">
                     <i class="fa fa-files-o"></i>
                     <span>日志记录</span>
                 </a>
             </li>
-            <li class="treeview">
+            <li>
                 <a href="#">
                     <i class="fa fa-laptop"></i>
                     <span>操作指南</span>
@@ -64,7 +70,7 @@
                         </span>
                 </a>
             </li>
-            <li class="treeview">
+            <li>
                 <a href="#">
                     <i class="fa fa-table"></i> <span>关于我们</span>
                 </a>

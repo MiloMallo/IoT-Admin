@@ -18,6 +18,8 @@ Route::group([
     $router->resource('tags',TagController::class);
     $router->resource('tasks',TaskController::class);
 
+    $router->resource('warehouses',WarehouseController::class);
+    $router->resource('products',ProductController::class);
 
 });
 Route::get('chart', function(){
