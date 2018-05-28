@@ -25,8 +25,8 @@ class WarehouseController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('header');
-            $content->description('description');
+            $content->header('仓库管理');
+            $content->description('仓库列表');
 
             $content->body($this->grid());
         });

@@ -62,7 +62,7 @@ class Mockery_MockTest extends MockeryTestCase
 
     public function testMockToStringMayBeDeferred()
     {
-        $mock = mock('ClassWithToString')->makePartial();
+        $mock = mock('ClassWithToString')->shouldDeferMissing();
         $this->assertEquals("foo", (string)$mock);
     }
 

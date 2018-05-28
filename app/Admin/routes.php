@@ -21,6 +21,7 @@ Route::group([
     $router->resource('warehouses',WarehouseController::class);
     $router->resource('products',ProductController::class);
 
+
 });
 Route::get('chart', function(){
     $stats = DB::table('chartBar')->select('y','a','b')->get();

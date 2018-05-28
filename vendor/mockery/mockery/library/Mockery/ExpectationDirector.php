@@ -150,7 +150,7 @@ class ExpectationDirector
      * Make the given expectation a default for all others assuming it was
      * correctly created last
      *
-     * @param \Mockery\Expectation $expectation
+     * @param \Mockery\Expectation
      */
     public function makeExpectationDefault(\Mockery\Expectation $expectation)
     {

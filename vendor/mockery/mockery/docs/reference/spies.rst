@@ -150,5 +150,5 @@ We can set expectation on number of calls as well:
         ->foo('bar')
         ->twice();
 
-Unfortunately, due to limitations we can't support the same syntax for the
+Unfortunatelly, due to limitations we can't support the same syntax for the
 ``shouldNotHaveReceived()`` method.

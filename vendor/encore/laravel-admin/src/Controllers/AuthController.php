@@ -3,6 +3,7 @@
 namespace Encore\Admin\Controllers;
 
 use Encore\Admin\Auth\Database\Administrator;
+use Encore\Admin\Auth\Database\Role;
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form;
 use Encore\Admin\Layout\Content;
@@ -111,18 +112,24 @@ class AuthController extends Controller
     protected function settingForm()
     {
         return Administrator::form(function (Form $form) {
-            $form->display('username', trans('admin.username'));
-            $form->text('name', trans('admin.name'))->rules('required');
-            $form->image('avatar', trans('admin.avatar'));
-            $form->password('password', trans('admin.password'))->rules('confirmed|required');
-            $form->password('password_confirmation', trans('admin.password_confirmation'))->rules('required')
+            $form->text('abbreviation', '简称')->rules('required');
+            $form->email('email','邮箱')->rules('required');
+            $form->text('username', '用户姓名')->rules('required');
+            $form->mobile('phone','手机号码')->rules('required');
+            $form->mobile('mobile','电话')->rules('required');
+            $form->text('address', '地址')->rules('required');
+            $form->image('avatar', '图像')->rules('required');
+            $form->password('password', '密码')->rules('required|confirmed');
+            $form->password('password_confirmation', '确认密码')->rules('required')
                 ->default(function ($form) {
                     return $form->model()->password;
                 });
+            $form->ignore(['password_confirmation']);
+
+            $form->multipleSelect('roles', '职务')->options(Role::all()->pluck('name', 'id'));
 
             $form->setAction(admin_base_path('auth/setting'));
 
-            $form->ignore(['password_confirmation']);
 
             $form->saving(function (Form $form) {
                 if ($form->password && $form->model()->password != $form->password) {

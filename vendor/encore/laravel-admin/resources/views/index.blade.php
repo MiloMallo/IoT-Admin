@@ -56,7 +56,7 @@
         {!! Admin::script() !!}
     </div>
 
-    @include('admin::partials.footer')
+    {{--@include('admin::partials.footer')--}}
 
 </div>
 

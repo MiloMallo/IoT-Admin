@@ -20,7 +20,8 @@ Route::group(['middleware' => 'auth:api'], function(){
     Route::post('gets', 'api\Auth\UserController@getDetails');
     Route::get('posts', 'api\Auth\UserController@index');
 
+    //Product
+    Route::get('products/{starte}/num/{num}', 'api\Auth\ProductController@products');
     // Users
     Route::get('me', 'api\Auth\UserController@me');
 });
-

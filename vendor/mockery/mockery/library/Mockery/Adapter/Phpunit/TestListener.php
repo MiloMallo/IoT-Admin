@@ -69,11 +69,4 @@ class TestListener extends BaseTestListener
         $result = $test->getTestResultObject();
         $result->addFailure($test, $e, $time);
     }
-
-    public function startTestSuite(\PHPUnit\Framework\TestSuite $suite)
-    {
-        \PHPUnit\Util\Blacklist::$blacklistedClassNames[\Mockery::class] = 1;
-
-        parent::startTestSuite($suite);
-    }
 }

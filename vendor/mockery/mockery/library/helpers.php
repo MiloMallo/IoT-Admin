@@ -1,6 +1,5 @@
 <?php
 
-use Mockery\Matcher\AndAnyOtherArgs;
 use Mockery\Matcher\AnyArgs;
 use Mockery\Matcher\NoArgs;
 
@@ -48,19 +47,5 @@ if (!function_exists("anyArgs")) {
     function anyArgs()
     {
         return new AnyArgs();
-    }
-}
-
-if (!function_exists("andAnyOtherArgs")) {
-    function andAnyOtherArgs()
-    {
-        return new AndAnyOtherArgs();
-    }
-}
-
-if (!function_exists("andAnyOthers")) {
-    function andAnyOthers()
-    {
-        return new AndAnyOtherArgs();
     }
 }

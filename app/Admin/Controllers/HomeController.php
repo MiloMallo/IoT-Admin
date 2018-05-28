@@ -3,6 +3,10 @@
 namespace App\Admin\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Product;
+use App\Warehouse;
+use Encore\Admin\Auth\Database\Administrator;
+use Encore\Admin\Auth\Database\OperationLog;
 use Encore\Admin\Controllers\Dashboard;
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Column;
@@ -10,6 +14,7 @@ use Encore\Admin\Layout\Content;
 use Encore\Admin\Layout\Row;
 use Encore\Admin\Widgets\ChartDonut;
 use Encore\Admin\Widgets\InfoBox;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -37,14 +42,18 @@ class HomeController extends Controller
                 });
             });*/
 
-            $content->header('Info box');
-            $content->description('Description...');
+            $content->header('数据图表');
+            $content->description('实时分析...');
 
             $content->row(function (Row $row) {
-                $row->column(3, new InfoBox('New Users', 'users', 'aqua', '/demo/users', '1024'));
-                $row->column(3, new InfoBox('New Orders', 'shopping-cart', 'green', '/demo/orders', '150%'));
-                $row->column(3, new InfoBox('Articles', 'book', 'yellow', '/demo/articles', '2786'));
-                $row->column(3, new InfoBox('Documents', 'file', 'red', '/demo/files', '698726'));
+                $userNum = (string)(Administrator::all()->count());
+                $row->column(3, new InfoBox('New Users', 'users', 'aqua', '/admin/auth/users', $userNum));
+                $warehouseNum = (string)(Warehouse::all()->count());
+                $row->column(3, new InfoBox('New Orders', 'shopping-cart', 'green', '/admin/warehouses', $warehouseNum));
+                $productNum = (string)(Product::all()->count());
+                $row->column(3, new InfoBox('Articles', 'book', 'yellow', '/admin/products', $productNum));
+                $logNum = (string)(OperationLog::all()->count());
+                $row->column(3, new InfoBox('Documents', 'file', 'red', '/admin/auth/logs', $logNum));
 
             });
             $content->row(function (Row $row) {

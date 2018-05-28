@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('number',30);
             $table->string('project_name',30);
             $table->string('version');
+            $table->integer('warehouse_id');
             $table->string('specification');
             $table->string('package');
             $table->string('step',20);

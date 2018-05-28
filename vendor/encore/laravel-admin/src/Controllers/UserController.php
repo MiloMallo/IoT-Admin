@@ -9,7 +9,10 @@ use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Layout\Content;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
+use Laravel\Passport\HasApiTokens;
 
 class UserController extends Controller
 {
@@ -23,8 +26,8 @@ class UserController extends Controller
     public function index()
     {
         return Admin::content(function (Content $content) {
-            $content->header(trans('admin.administrator'));
-            $content->description(trans('admin.list'));
+            $content->header('用户管理');
+            $content->description('列表信息');
             $content->body($this->grid()->render());
         });
     }
@@ -39,8 +42,8 @@ class UserController extends Controller
     public function edit($id)
     {
         return Admin::content(function (Content $content) use ($id) {
-            $content->header(trans('admin.administrator'));
-            $content->description(trans('admin.edit'));
+            $content->header('用户管理');
+            $content->description('编辑');
             $content->body($this->form()->edit($id));
         });
     }
@@ -53,8 +56,8 @@ class UserController extends Controller
     public function create()
     {
         return Admin::content(function (Content $content) {
-            $content->header(trans('admin.administrator'));
-            $content->description(trans('admin.create'));
+            $content->header('用户管理');
+            $content->description('创建');
             $content->body($this->form());
         });
     }
@@ -109,6 +112,7 @@ class UserController extends Controller
             $form->text('username', '用户姓名')->rules('required');
             $form->mobile('phone','手机号码')->rules('required');
             $form->mobile('mobile','电话')->rules('required');
+            $form->text('address', '地址')->rules('required');
             $form->image('avatar', '图像')->rules('required');
             $form->password('password', '密码')->rules('required|confirmed');
             $form->password('password_confirmation', '确认密码')->rules('required')

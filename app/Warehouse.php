@@ -12,6 +12,7 @@ class Warehouse extends Model
 
     public function products()
     {
-        return $this->belongsToMany('App\Product','warehouse_product','warehouse_id','product_id');
+        return $this->hasMany(Product::class);
+        //return $this->belongsToMany(Product::class)->withTimestamps();//,'product_warehouse','warehouse_id','product_id');
     }
 }

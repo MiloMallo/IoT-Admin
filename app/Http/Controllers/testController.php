@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Console\Commands\Swoole;
+use App\Product;
 use Illuminate\Http\Request;
 
 class testController extends Controller
@@ -53,5 +54,10 @@ class testController extends Controller
         list($msec, $sec) = explode(' ', microtime());
         $msectime =  (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);
         return $msectime;
+    }
+
+    public function test()
+    {
+        dd(Product::find(1)->warehouse);
     }
 }

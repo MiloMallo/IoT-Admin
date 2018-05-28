@@ -6,6 +6,8 @@ use Encore\Admin\Traits\AdminBuilder;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
 
 /**
  * Class Administrator.
@@ -14,7 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Administrator extends Model implements AuthenticatableContract
 {
-    use Authenticatable, AdminBuilder, HasPermissions;
+    use Authenticatable, AdminBuilder, HasPermissions,Notifiable,HasApiTokens;
 
     protected $fillable = ['abbreviation','username', 'password', 'mobile', 'phone','avatar','address','email'];
     /**

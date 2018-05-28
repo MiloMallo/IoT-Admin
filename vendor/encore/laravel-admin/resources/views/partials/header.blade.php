@@ -40,15 +40,15 @@
 
                             <p>
                                 {{ Admin::user()->name }}
-                                <small>Member since admin {{ Admin::user()->created_at }}</small>
+                                <small>用户创建于 {{ Admin::user()->created_at }}</small>
                             </p>
                         </li>
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="{{ admin_base_path('auth/setting') }}" class="btn btn-default btn-flat">{{ trans('admin.setting') }}</a>
+                                <a href="{{ admin_base_path('auth/setting') }}" class="btn btn-default btn-flat">设置</a>
                             </div>
                             <div class="pull-right">
-                                <a href="{{ admin_base_path('auth/logout') }}" class="btn btn-default btn-flat">{{ trans('admin.logout') }}</a>
+                                <a href="{{ admin_base_path('auth/logout') }}" class="btn btn-default btn-flat">退出</a>
                             </div>
                         </li>
                     </ul>
