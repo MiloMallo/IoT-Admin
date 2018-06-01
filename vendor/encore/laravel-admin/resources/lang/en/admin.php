@@ -103,8 +103,8 @@ return [
     'size'       => 'Size',
 
     'listbox' => [
-        'text_total'         => 'Showing all {0}',
-        'text_empty'         => 'Empty list',
+        'text_total'         => '列表有 {0} 项',
+        'text_empty'         => '空列表',
         'filtered'           => '{0} / {1}',
         'filter_clear'       => 'Show all',
         'filter_placeholder' => 'Filter',

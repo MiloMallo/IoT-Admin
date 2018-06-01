@@ -23,6 +23,9 @@ class TagController extends Controller
      */
     public function index()
     {
+        //dd(!Admin::user()->roles()->where('id',1)->get()->isEmpty());
+        //dd(Admin::user()->roles()->where('id',1)->get()->isEmpty());
+        //dd(Admin::user()->roles()->where('id',2)->get());
         return Admin::content(function (Content $content) {
 
             $content->header('header');

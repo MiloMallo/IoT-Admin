@@ -52,7 +52,7 @@ class Permission
      */
     public function checkRoutePermission(Request $request)
     {
-        if (!$middleware = collect($request->route()->middleware())->first(function ($middleware) {
+        /*if (!$middleware = collect($request->route()->middleware())->first(function ($middleware) {
             return Str::startsWith($middleware, $this->middlewarePrefix);
         })) {
             return false;
@@ -66,7 +66,7 @@ class Permission
             throw new \InvalidArgumentException("Invalid permission method [$method].");
         }
 
-        call_user_func_array([Checker::class, $method], [$args]);
+        call_user_func_array([Checker::class, $method], [$args]);*/
 
         return true;
     }

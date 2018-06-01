@@ -47,13 +47,13 @@ class HomeController extends Controller
 
             $content->row(function (Row $row) {
                 $userNum = (string)(Administrator::all()->count());
-                $row->column(3, new InfoBox('New Users', 'users', 'aqua', '/admin/auth/users', $userNum));
+                $row->column(3, new InfoBox('用户', 'users', 'aqua', '/admin/auth/users', $userNum));
                 $warehouseNum = (string)(Warehouse::all()->count());
-                $row->column(3, new InfoBox('New Orders', 'shopping-cart', 'green', '/admin/warehouses', $warehouseNum));
+                $row->column(3, new InfoBox('仓库', 'shopping-cart', 'green', '/admin/warehouses', $warehouseNum));
                 $productNum = (string)(Product::all()->count());
-                $row->column(3, new InfoBox('Articles', 'book', 'yellow', '/admin/products', $productNum));
+                $row->column(3, new InfoBox('产品', 'book', 'yellow', '/admin/products', $productNum));
                 $logNum = (string)(OperationLog::all()->count());
-                $row->column(3, new InfoBox('Documents', 'file', 'red', '/admin/auth/logs', $logNum));
+                $row->column(3, new InfoBox('当前日志', 'file', 'red', '/admin/auth/logs', $logNum));
 
             });
             $content->row(function (Row $row) {

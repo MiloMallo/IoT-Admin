@@ -121,8 +121,8 @@ class UserController extends Controller
                 });
             $form->ignore(['password_confirmation']);
 
-            $form->multipleSelect('roles', '职务')->options(Role::all()->pluck('name', 'id'));
-
+            //$form->multipleSelect('roles', '职务')->options(Role::all()->pluck('name', 'id'));
+            $form->listbox('roles', '职务')->options(Role::all()->pluck('name', 'id'));
             $form->display('created_at', '创建时间');
             $form->display('updated_at', '更新时间');
 

@@ -18,12 +18,17 @@
                     <i class="fa fa-dashboard"></i> <span>数据图表</span>
                 </a>
             </li>
-            <li>
-                <a href="{{ admin_base_path('auth/users') }}">
-                    <i class="fa fa-pie-chart"></i>
-                    <span>用户管理</span>
-                </a>
-            </li>
+            {{--@foreach(Admin::user()->roles() as $roles)--}}
+                @if(!Admin::user()->roles()->where('id',1)->get()->isEmpty())
+                {{--@foreach($errors->get('email') as $message)--}}
+                    <li>
+                        <a href="{{ admin_base_path('auth/users') }}">
+                            <i class="fa fa-pie-chart"></i>
+                            <span>用户管理</span>
+                        </a>
+                    </li>
+                @endif
+            {{--@endforeach--}}
             <li>
                 <a href="{{ admin_base_path('/warehouses') }}">
                     <i class="fa fa-pie-chart"></i>
