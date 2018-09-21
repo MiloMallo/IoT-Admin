@@ -6,6 +6,5 @@
 <p align="center"><img src="https://github.com/MiloMallo/IoT-Admin/tree/master/image/2.png"></p>
 <p align="center"><img src="https://github.com/MiloMallo/IoT-Admin/tree/master/image/3.png"></p>
 
-
 - **[AdminLTE](https://github.com/almasaeed2010/AdminLTE)**
 - [laravel-admin](https://github.com/z-song/laravel-admin)
