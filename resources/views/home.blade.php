@@ -1,21 +1,21 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-{{--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />--}}{{--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />--}}
-<title>復旦微</title>
-{{--<meta name="keywords" content="{dede:field name='keywords'/}" />--}}
-{{--<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />--}}
-{{--<meta name="author" content="order by dede58.com" />--}}
-{{--<meta http-equiv="MSThemeCompatible" content="Yes" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">--}}
-<link rel="stylesheet" type="text/css" href="{{asset('skin/css/style_2_common.css')}}" />
-<link rel="stylesheet" type="text/css" href="{{asset('skin/css/style_2_portal_index.css')}}" />
-<script src="{{asset('skin/js/jquery-1.7.2.js')}}" type="text/javascript"></script>
-<script src="{{asset('skin/js/common.js')}}" type="text/javascript"></script>
-<script src="{{asset('skin/js/pace.js')}}" type="text/javascript"></script>
-<link href="{{asset('skin/css/style.css')}}" rel="stylesheet" type="text/css" />
-{{--<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">--}}
-{{--<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>--}}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mallo</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="author" content="order by dede58.com" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<link rel="stylesheet" type="text/css" href="skin/css/style_2_common.css" />
+<link rel="stylesheet" type="text/css" href="skin/css/style_2_portal_index.css" />
+<script src="skin/js/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="skin/js/common.js" type="text/javascript"></script>
+<script src="skin/js/pace.js" type="text/javascript"></script>
+<link href="skin/css/style.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
 </head>
 
 <body id="nv_portal" class="pg_index">
@@ -34,7 +34,7 @@
 </div>
 <div class="wk_inav">
 <ul class="nav">
-<li id="mn_portal"><a href="http://192.168.45.91:83/admin" hidefocus="true" title="Portal">系统主站<span>Home</span></a></li>
+<li id="mn_portal"><a href="#" hidefocus="true" title="Portal">企业首页<span>Home</span></a></li>
 <li id="mn_P2" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"><a href="#" hidefocus="true">新闻资讯</a></li>
 <li id="mn_P3" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"><a href="#" hidefocus="true">产品中心</a></li>
 <li id="mn_P4" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"><a href="#" hidefocus="true">项目案例</a></li>
@@ -75,18 +75,18 @@
 <div id="mu" class="cl">
 <div class="wp"> </div>
 </div>
-<script src="{{asset('skin/js/week_nav.js')}}" type="text/javascript"></script>
+<script src="skin/js/week_nav.js" type="text/javascript"></script>
 
 
 <div id="wp" class="wp">
   <style id="diy_style" type="text/css">
 </style>
-  <script src="{{asset('skin/js/jquery-1.7.2.js')}}" type="text/javascript"></script>
-  <script src="{{asset('skin/js/jquery.fullpage.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('skin/js/scoll.js')}}" type="text/javascript"></script>
-  <script src="{{asset('skin/js/addons.js')}}" type="text/javascript"></script>
-  <script src="{{asset('skin/js/case.js')}}" type="text/javascript"></script>
-  <script src="{{asset('skin/js/tab.lib.js')}}" type="text/javascript"></script>
+  <script src="skin/js/jquery-1.7.2.js" type="text/javascript"></script> 
+  <script src="skin/js/jquery.fullpage.min.js" type="text/javascript"></script> 
+  <script src="skin/js/scoll.js" type="text/javascript"></script> 
+  <script src="skin/js/addons.js" type="text/javascript"></script> 
+  <script src="skin/js/case.js" type="text/javascript"></script> 
+  <script src="skin/js/tab.lib.js" type="text/javascript"></script> 
   <script type="text/javascript">
 PTM(document).ready(function(){
 PTM(".wk_about").tab({
@@ -104,29 +104,29 @@ tabId:"#wk_about_menu",tabTag:"a",conId:"#wk_about_div",conTag:"div.wk_aaa",act:
         <li id="wk_s1" class="wk_selected">
           <div class="wk_banner"></div>
           <div class="wk_wrap">
-            <div class="wk_banner13"><img src="{{asset('skin/images/banner13.png')}}" alt="" /></div>
-            <div class="wk_banner12"><img src="{{asset('skin/images/banner12.png')}}" alt="" /></div>
-            <div class="wk_banner14"><img src="{{asset('skin/images/banner14.png')}}" alt="" /></div>
+            <div class="wk_banner13"><img src="skin/images/banner13.png" alt="" /></div>
+            <div class="wk_banner12"><img src="skin/images/banner12.png" alt="" /></div>
+            <div class="wk_banner14"><img src="skin/images/banner14.png" alt="" /></div>
           </div>
         </li>
         <li id="wk_s2">
           <div class="wk_banner"></div>
           <div class="wk_wrap">
-            <div class="wk_banner22"><img src="{{asset('skin/images/banner22.png')}}" alt="" /></div>
-            <div class="wk_banner23"><img src="{{asset('skin/images/banner23.png')}}" alt="" /></div>
+            <div class="wk_banner22"><img src="skin/images/banner22.png" alt="" /></div>
+            <div class="wk_banner23"><img src="skin/images/banner23.png" alt="" /></div>
             <div class="wk_banner24"><a href="#" target="_blank">了解更多</a></div>
           </div>
         </li>
         <li id="wk_s3">
           <div class="wk_banner"></div>
           <div class="wk_wrap">
-            <div class="wk_banner32"><img src="{{asset('skin/images/banner32.png')}}" alt="" /></div>
-            <div class="wk_banner33"><img src="{{asset('skin/images/banner33.png')}}" alt="" /></div>
+            <div class="wk_banner32"><img src="skin/images/banner32.png" alt="" /></div>
+            <div class="wk_banner33"><img src="skin/images/banner33.png" alt="" /></div>
           </div>
         </li>
       </ul>
     </div>
-    <div class="wk_arrow"><a href="#service"><img src="{{asset('skin/images/ico3.png')}}" /></a></div>
+    <div class="wk_arrow"><a href="#service"><img src="skin/images/ico3.png" /></a></div>
     <div class="wk_slide-nav-wrap">
       <div id="wk_slide-nav">
         <ul>
@@ -200,49 +200,49 @@ tabId:"#wk_about_menu",tabTag:"a",conId:"#wk_about_div",conTag:"div.wk_aaa",act:
   <!--page3-->
  <div class="section page3">
 <div class="case">
-<h2><img src="{{asset('skin/images/case_title.png')}}" alt="" /></h2>
-<h2 class="wk_h2"><img src="{{asset('skin/images/case_title1.png')}}" alt="" /></h2>
+<h2><img src="skin/images/case_title.png" alt="" /></h2>
+<h2 class="wk_h2"><img src="skin/images/case_title1.png" alt="" /></h2>
 <div class="wk_btndiv"> <a class="abtn aleft" href="javascript:void(0);"></a> <a class="abtn aright" href="javascript:void(0);"></a> </div>
 <div class="wk_scrollcontainer">
 <ul>
 <li> <div class="wk_case_list"> <a href="http://www.fmsh.com/weishengfangan.shtml" target="_blank" title="金融IC卡">
-<div class="wk_case_img"><img src="{{asset('skin/images/cases/IC卡.png')}}" width="275" height="190" alt="" /></div>
+<div class="wk_case_img"><img src="skin/images/cases/IC卡.png" width="275" height="190" alt="" /></div>
 <div class="wk_case_ico"></div>
 <div class="wk_case_xian"> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </div>
 </a> </div>
 <div class="wk_case_list"> <a href="http://www.fmsh.com/zhinengdianbiaofangan.shtml" target="_blank" title="智能电表">
-<div class="wk_case_img"><img src="{{asset('skin/images/cases/智能电表.png')}}" width="275" height="190" alt="" /></div>
+<div class="wk_case_img"><img src="skin/images/cases/智能电表.png" width="275" height="190" alt="" /></div>
 <div class="wk_case_ico"></div>
 <div class="wk_case_xian"> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </div>
 </a> </div>
 
 <div class="wk_case_list"> <a href="#" target="_blank" title="超高频系统">
-<div class="wk_case_img"><img src="{{asset('skin/images/cases/超高频系统.png')}}" width="275" height="190" alt="超高频系统" /></div>
+<div class="wk_case_img"><img src="skin/images/cases/超高频系统.png" width="275" height="190" alt="超高频系统" /></div>
 <div class="wk_case_ico"></div>
 <div class="wk_case_xian"> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </div>
 </a> </div>
 <div class="wk_case_list"> <a href="#" target="_blank" title="电力载波">
-<div class="wk_case_img"><img src="{{asset('skin/images/cases/电力载波.png')}}" width="275" height="190" alt="电力载波" /></div>
+<div class="wk_case_img"><img src="skin/images/cases/电力载波.png" width="275" height="190" alt="电力载波" /></div>
 <div class="wk_case_ico"></div>
 <div class="wk_case_xian"> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </div>
 </a> </div>
 <div class="wk_case_list"> <a href="#" target="_blank" title="社保方案">
-<div class="wk_case_img"><img src="{{asset('skin/images/cases/社保方案.png')}}" width="275" height="190" alt="社保方案" /></div>
+<div class="wk_case_img"><img src="skin/images/cases/社保方案.png" width="275" height="190" alt="社保方案" /></div>
 <div class="wk_case_ico"></div>
 <div class="wk_case_xian"> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </div>
 </a> </div>
 <div class="wk_case_list"> <a href="#" target="_blank" title="智能仓库">
-<div class="wk_case_img"><img src="{{asset('skin/images/cases/智能仓库.png')}}" width="275" height="190" alt="智能仓库" /></div>
+<div class="wk_case_img"><img src="skin/images/cases/智能仓库.png" width="275" height="190" alt="智能仓库" /></div>
 <div class="wk_case_ico"></div>
 <div class="wk_case_xian"> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </div>
 </a> </div>
 <div class="wk_case_list"> <a href="#" target="_blank" title="智能交通">
-<div class="wk_case_img"><img src="{{asset('skin/images/cases/智能交通.png')}}" width="275" height="190" alt="智能交通" /></div>
+<div class="wk_case_img"><img src="skin/images/cases/智能交通.png" width="275" height="190" alt="智能交通" /></div>
 <div class="wk_case_ico"></div>
 <div class="wk_case_xian"> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </div>
 </a> </div>
 <div class="wk_case_list"> <a href="#" target="_blank" title="管理系统">
-<div class="wk_case_img"><img src="{{asset('skin/images/cases/管理系统.png')}}" width="275" height="190" alt="管理系统" /></div>
+<div class="wk_case_img"><img src="skin/images/cases/管理系统.png" width="275" height="190" alt="管理系统" /></div>
 <div class="wk_case_ico"></div>
 <div class="wk_case_xian"> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </div>
 </a> </div>
@@ -306,14 +306,14 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
   <!--page4-->
   <div class="section page4">
     <div class="wk_about">
-      <h2><img src="{{asset('skin/images/about_title.png')}}" alt="" /></h2>
-      <h2 class="wk_h2"><img src="{{asset('skin/images/about_title1.png')}}" alt=""/></h2>
+      <h2><img src="skin/images/about_title.png" alt="" /></h2>
+      <h2 class="wk_h2"><img src="skin/images/about_title1.png" alt=""/></h2>
       <div class="wk_about_menu" id="wk_about_menu"><a class="active">简介</a><a>动态</a><a>历程</a></div>
       <div class="wk_about_div" id="wk_about_div">
         <div class="wk_about_main wk_aaa">
-          <div class="wk_about_left"><img src="{{asset('skin/images/about_img.png')}}" alt="" /></div>
+          <div class="wk_about_left"><img src="skin/images/about_img.png" alt="" /></div>
           <div class="wk_about_right">
-            <div class="wk_about_top"> <a><img src="{{asset('skin/images/about_ico1.png')}}" alt="" /></a> <a><img src="skin/images/about_ico2.png" alt="" /></a> <a><img src="skin/images/about_ico3.png" alt="" /></a> <a style="margin-right:0;"><img src="skin/images/about_ico4.png" alt="" /></a>
+            <div class="wk_about_top"> <a><img src="skin/images/about_ico1.png" alt="" /></a> <a><img src="skin/images/about_ico2.png" alt="" /></a> <a><img src="skin/images/about_ico3.png" alt="" /></a> <a style="margin-right:0;"><img src="skin/images/about_ico4.png" alt="" /></a>
               <div class="clear"></div>
             </div>
             <div class="wk_about_des"> 1998年7月，由复旦大学“专用集成电路与系统国家重点实验室”、上海商业投资公司和一批梦想创建中国最好的集成电路设计公司（芯片设计）的创业者联合发起创建了复旦微电子。公司成立以来，已成功地确立了在国内集成电路设计行业中举足轻重的地位。公司于2000年8月4日在香港上市(股票编号:1385)，成为国内集成电路设计行业第一家上市企业。
@@ -402,7 +402,7 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
                       <h4>2014年6月</h4>
                       <div class="wk_his_ico"></div>
                       <dl>
-                        <dt><img src="{{asset('skin/images/history_img1.jpg')}}"></dt>
+                        <dt><img src="skin/images/history_img1.jpg"></dt>
                         <dd>公司股票从香港创业板转往香港主板上市...</dd>
                       </dl>
                     </div>
@@ -410,7 +410,7 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
                       <h4>2015年5月</h4>
                       <div class="wk_his_ico"></div>
                       <dl>
-                        <dt><img src="{{asset('skin/images/history_img6.jpg')}}"></dt>
+                        <dt><img src="skin/images/history_img6.jpg"></dt>
                         <dd>2015年公司销售额突破10亿人民币;金融IC卡芯片国产化取得重大突破...</dd>
                       </dl>
                     </div>
@@ -418,7 +418,7 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
                       <h4>2016年2月</h4>
                       <div class="wk_his_ico"></div>
                       <dl>
-                        <dt><img src="{{asset('skin/images/history_img7.jpg')}}"></dt>
+                        <dt><img src="skin/images/history_img7.jpg"></dt>
                         <dd>移动支付服务平台NFCOS再创佳绩。完成了移动运营商SWP-SIM交通卡的多项功能升级...</dd>
                       </dl>
                     </div>
@@ -426,7 +426,7 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
                       <h4>2017年5月</h4>
                       <div class="wk_his_ico"></div>
                       <dl>
-                        <dt><img src="{{asset('skin/images/history_img8.jpg')}}"></dt>
+                        <dt><img src="skin/images/history_img8.jpg"></dt>
                         <dd>FM1280金融IC卡芯片累计销售超亿颗，纯金融领域批量发卡银行50多家，出货量遥遥领先...</dd>
                       </dl>
                     </div>
@@ -445,13 +445,13 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
   <!--page5-->
   <div class="section page5">
     <div class="wk_service">
-      <h2><img src="{{asset('skin/images/service_title.png')}}" alt="" /></h2>
-      <h2 class="wk_h2"><img src="{{asset('skin/images/service_title1.png')}}" alt="" /></h2>
+      <h2><img src="skin/images/service_title.png" alt="" /></h2>
+      <h2 class="wk_h2"><img src="skin/images/service_title1.png" alt="" /></h2>
       <div class="wk_service_xian"></div>
       <div class="wk_service_main">
         <ul>
-          <li> <img src="{{asset('skin/images/customeres/huawei.png')}}" alt="" /> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </li>
-          <li> <img src="{{asset('skin/images/customeres/alibaba.png')}}" alt="" /> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </li>
+          <li> <img src="skin/images/customeres/huawei.png" alt="" /> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </li>
+          <li> <img src="skin/images/customeres/alibaba.png" alt="" /> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </li>
           <!-- <li> <img src="skin/images/service_img3.png" alt="" /> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </li>
           <li> <img src="skin/images/service_img4.png" alt="" /> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </li>
           <li> <img src="skin/images/service_img5.png" alt="" /> <span class="wk_span_1"></span> <span class="wk_span_2"></span> <span class="wk_span_3"></span> <span class="wk_span_4"></span> </li>
@@ -473,10 +473,10 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
   <!--page6-->
   <div class="section page6">
     <div class="wk_contact">
-      <div class="wk_contact_left"><img src="{{asset('skin/images/contact_img.png')}}" alt="" /></div>
-      <div class="wk_contact_left1"><img src="{{asset('skin/images/contact_img1.png')}}" alt="" /></div>
+      <div class="wk_contact_left"><img src="skin/images/contact_img.png" alt="" /></div>
+      <div class="wk_contact_left1"><img src="skin/images/contact_img1.png" alt="" /></div>
       <div class="wk_contact_right">
-        <h2><img src="{{asset('skin/images/contact_title.png')}}" alt="" /></h2>
+        <h2><img src="skin/images/contact_title.png" alt="" /></h2>
         <ul class="wk_cont_div">
           <li class="wk_serve-ico-kf">业务咨询：<span class="wk_cont_a"><img src="skin/images/cont_a.png" /></span><a href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qqa/}&amp;site=qq&amp;menu=yes" target="_blank">1229555035 【点击咨询】</a></li>
           <li class="wk_serve-ico-kf">技术服务：<span class="wk_cont_a"><img src="skin/images/cont_a.png" /></span><a href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qqb/}&amp;site=qq&amp;menu=yes" target="_blank">1229555035  【点击咨询】</a></li>
@@ -494,7 +494,7 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
     </div>
   </div>
 </div>
-<script src="{{asset('skin/js/banner.js')}}" type="text/javascript"></script>
+<script src="skin/js/banner.js" type="text/javascript"></script>
 <div class="clear"></div>
 <div class="wp"><!--[diy=diy1]-->
   <div id="diy1" class="area"></div>
@@ -506,8 +506,10 @@ scrollobjSize:Math.ceil(PTM(".uldiv").find("li").length*1)
 </div>
 <ul id="scbar_type_menu" class="p_pop" style="display: none;">
 </ul>
-
-<link href="{{asset('skin/css/service.css')}}" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+<link href="skin/css/service.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
 PTM(document).ready(function(){
@@ -532,9 +534,10 @@ PTM('.weixing-show').hide();
 });
 });
 </script> 
-<script src="{{asset('skin/js/home.js')}}" type="text/javascript"></script>
+<script src="skin/js/home.js" type="text/javascript"></script>
 <div id="scrolltop"> <span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span> </div>
 <script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
 <div id="discuz_tips" style="display:none;"></div>
+<script src="skin/js/discuz_tips.js" type="text/javascript" charset="UTF-8"></script>
 </body>
 </html>
