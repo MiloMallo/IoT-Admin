@@ -2,9 +2,9 @@
 
 ## 基于Laravel框架的管理平台
 
-<p align="center"><img src="https://github.com/MiloMallo/IoT-Admin/tree/TaskController/image/1.png"></p>
-<p align="center"><img src="https://github.com/MiloMallo/IoT-Admin/tree/TaskController/image/2.png"></p>
-<p align="center"><img src="https://github.com/MiloMallo/IoT-Admin/tree/TaskController/image/3.png"></p>
+<p align="center"><img src="https://github.com/MiloMallo/IoT-Admin/tree/master/image/1.png"></p>
+<p align="center"><img src="https://github.com/MiloMallo/IoT-Admin/tree/master/image/2.png"></p>
+<p align="center"><img src="https://github.com/MiloMallo/IoT-Admin/tree/master/image/3.png"></p>
 
 
 - **[AdminLTE](https://github.com/almasaeed2010/AdminLTE)**
